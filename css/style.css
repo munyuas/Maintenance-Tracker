@@ -21,12 +21,14 @@ html {
 /* HEADER */
 /* ------------------------------------- */
 
+
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url(../images/bg-main-cover.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
+
 
 header h1 {
     margin: 0;
@@ -89,6 +91,17 @@ header h1 {
     border: 2px solid #e67e22;
 }
 
+.admin-nav .main-nav li a:hover,
+.admin-nav .main-nav li a:active {
+    padding: 10px 20px;
+    border: 2px solid #22a6b3;
+    transition: border 0.5s;
+}
+
+.admin-nav .active {
+    border: 2px solid #22a6b3;
+}
+
 /* ------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ------------------------------------- */
@@ -149,7 +162,7 @@ header h1 {
 form {
     position: absolute;
     width: 40%;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #fff;
@@ -157,14 +170,22 @@ form {
     box-shadow: 0 0 1em #222;
     border-radius: 2px;    
 }
-form h2 {
+.admin h2, form h2 {
     margin: 0 0 50px 0;
-    padding: 10px;
-    text-align: center;  
-    border-bottom: solid 1px #e67e22;
+    padding: 0 0 20px 0;
+    text-align: center;   
 }
+
+form h2 {
+     border-bottom: solid 1px #e67e22;  
+}
+
+.admin h2 {
+    border-bottom: solid 1px #22a6b3;
+}
+
 form p {
-    margin: 0 0 2% 0;
+    margin: 0 0 3% 0;
     position: relative;
     font-size: 100%;
 }
@@ -191,8 +212,7 @@ form input[type="password"]:focus {
     background: #fff;
 }
 
-form input[type="submit"] {
-    background: #e67e22;  
+.admin input[type="submit"], form input[type="submit"] {    
     border-radius: 2%;
     color: #fff;
     cursor: pointer;
@@ -203,8 +223,21 @@ form input[type="submit"] {
     padding:3%;
 }
 
+form input[type="submit"] {
+     background: #e67e22; 
+}
+
+.admin input[type="submit"] {
+    background: #22a6b3;
+   
+}
+
 form input[type="submit"]:hover {
     background: #cf6d17;
+}
+
+.admin input[type="submit"]:hover {
+    background: #0584f1;
 }
 
 form label {
