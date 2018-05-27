@@ -591,3 +591,28 @@ td:nth-child(5) a {
 }
 
 #menu .fa { margin-right: 10px; }
+
+/* ------------------------------------- */
+/* User area*/
+/* ------------------------------------- */
+
+.user-container {
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+.user-sec1 {
+   `width: 500px;
+    float: left;
+    height: 50%;
+    background-color: #333;
+}
+
+.user-sec2 {
+    width: 40%;
+    float: left;
+    height: 50%;
+}
+
+
