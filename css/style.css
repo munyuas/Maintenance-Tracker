@@ -21,7 +21,6 @@ html {
 /* HEADER */
 /* ------------------------------------- */
 
-
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url(../images/bg-main-cover.jpg);
     background-size: cover;
@@ -86,6 +85,29 @@ header h1 {
     transition: border 0.5s;
 }
 
+.request ul {
+    margin-bottom: 10px;
+    position: relative;
+    right: -68%;
+}
+
+.request li {
+    display: inline-block;
+    padding: 8px;  
+    border-right: 1px solid #252525;
+}
+
+.request li:first-child, .request li:last-child{
+    border: none;
+}
+
+
+.request li a {
+    text-decoration: none;
+    padding-left: 5px;
+    color: #252525;
+}
+
 .active {
     padding: 12px 0px;
     border: 2px solid #e67e22;
@@ -112,8 +134,18 @@ header h1 {
 }
 
 .container {
-    
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    color: #fff;
 }
+
+
 
 /* ------------------------------------- */
 /* BUTTONS */
@@ -273,3 +305,271 @@ form .small-signin {
     font-weight: 500;
 }
 
+
+/* ------------------------------------- */
+/* Dashboard Header*/
+/* ------------------------------------- */
+
+.left-content {
+    float: right;
+    width: 84%;
+    
+}
+
+.admin-content {
+    width: 80%;
+    margin: 0 auto;
+    color: #252525; 
+}
+
+.admin-header {
+    background: #252525;   
+    padding: 2%;
+}
+
+.admin-name {   
+    width: 40%;
+    float: left;
+    font-size:100%;
+    font-weight: 400; 
+}
+
+
+.admin-name h3 {   
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 100%;
+    font-weight: 300;    
+}
+
+
+.admin-name, .content-header h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px; 
+}
+
+.content-header {
+    margin-top: 5%;    
+}
+
+.content-header h1 {
+    margin-bottom: 20px;
+    font-size: 240%;
+    font-weight: 300;
+}
+
+.content-header p {
+    font-weight: 500;
+}
+
+.request {
+    margin-top: 50px;
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.request-table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+.request-table td, .request-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.request-table th {
+    background-color: #22a6b3 ;
+    padding: 20px 8px;
+    color: #fff;
+}
+
+
+.request-table a {
+    text-decoration: none;
+    color: #fff;   
+}
+
+
+.btn-accept:link, .btn-reject:link {
+    color: #fff;    
+    padding: 8px 8px;
+    border-radius: 2px;
+    display: inline-block;
+    width: 100%;
+    font-weight: 400;
+    
+}
+
+.btn-accept:link {    
+    background-color: #2ecc71;
+   
+}
+
+.btn-reject:link {
+    background-color: #B52E31;   
+}
+
+td:nth-child(3), td:nth-child(4), td:nth-child(5) {   
+    border: none;
+}
+
+td:nth-child(2) {
+    width: 50%;
+}
+
+td:nth-child(3) {
+    text-align: center;    
+}
+
+td:nth-child(5) a {
+    color: #252525;
+    text-decoration: underline;
+}
+
+.logout {
+    width: 30%;
+    float: right;
+    text-align: right;
+    margin-top: 0;
+}
+
+.logout a {
+    text-decoration: none;
+    color: #fff;    
+    padding: 3%;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.logout a:link,
+.logout a:visited {    
+    color: #fff;
+}
+
+.logout a:hover,
+.logout a:active {    
+    border: 1px solid #fff;
+}
+
+.admin-info {    
+    margin-bottom:2%;
+}
+
+
+/* ------------------------------------- */
+/* Dashboard Sidebarr*/
+/* ------------------------------------- */
+.side-menu {
+    position: fixed;
+    float: left;
+    width: 16%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #22a6b3;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+
+.dash-logo {
+    width: 100%;
+    background: #fff;
+}
+
+.center-logo {
+    width: 80px;
+    margin: auto;
+}
+
+.img-logo {
+    width: 80px;   
+    text-align: center;
+}
+
+#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#menu li {
+    position: relative;
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.89);
+    padding: 0;
+    padding: 0; 
+}
+
+#menu li ul {
+    opacity: 0;
+    height: 0px;
+}
+
+#menu li a {
+    font-size: 80%;
+    font-weight: 500;
+    position: relative;
+    display: block;
+    padding: 13px 20px;
+    color: #fff;   
+    z-index: 2;	
+	border-left: 4px solid #fff;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    color: #ffffff;
+    background-color:#252525;  
+    border-left: 4px solid #4A4A4A;
+}
+
+#menu li.active > a {
+    background-color: #2b303a;
+    color: #ffffff;
+}
+
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li ul {
+    position: absolute;
+    visibility: hidden;
+    left: 100%;
+    top: -1px;
+    background-color: #2b303a;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.1s linear;
+    border-top: 1px solid rgba(69, 74, 84, 0.7);
+}
+
+#menu li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+#menu li li ul {
+    right: 100%;
+    visibility: hidden;
+    top: -1px;
+    opacity: 0;
+    transition: opacity 0.1s linear;
+}
+
+#menu li li:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+#menu .fa { margin-right: 10px; }
