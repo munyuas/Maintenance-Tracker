@@ -85,13 +85,13 @@ header h1 {
     transition: border 0.5s;
 }
 
-.request ul {
+.request ul, .all-requests ul {
     margin-bottom: 10px;
     position: relative;
     right: -68%;
 }
 
-.request li {
+.request li, .all-requests li {
     display: inline-block;
     padding: 8px;  
     border-right: 1px solid #252525;
@@ -102,7 +102,7 @@ header h1 {
 }
 
 
-.request li a {
+.request li a,  .all-requests li a{
     text-decoration: none;
     padding-left: 5px;
     color: #252525;
@@ -364,13 +364,13 @@ form .small-signin {
     font-weight: 500;
 }
 
-.request {
+.request, .all-requests {
     margin-top: 50px;
     font-size: 80%;
     font-weight: 400;
 }
 
-.request-table {
+.request-table, {
     border-collapse: collapse;
     width: 100%;
     text-align: left;
@@ -428,6 +428,24 @@ td:nth-child(3) {
 td:nth-child(5) a {
     color: #252525;
     text-decoration: underline;
+}
+
+.all-requests td:nth-child(2) {
+    width: 15%;
+}
+
+.all-requests table {
+    border: 1px solid #ddd;
+}
+
+.all-requests td {
+    text-align: left;
+}
+.all-requests td:nth-child(3),
+.all-requests td:nth-child(4), 
+.all-requests td:nth-child(5),
+.all-requests td:nth-child(6) {
+    border: 1px solid #ddd;
 }
 
 .logout {
