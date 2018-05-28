@@ -12,3 +12,4 @@
 # Pivotal Tracker ID - #157869097 admin dashboard page is complete -> first iteration
 # Pivotal Tracker ID - #157901451 admin progress page is complete -> first iteration
 # Pivotal Tracker ID - #157901779 admin all requests page is complete -> first iteration
+# Pivotal Tracker ID - #157902691 user profile is complete -> first iteration
