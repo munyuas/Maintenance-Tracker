@@ -372,7 +372,7 @@ header h1 {
     font-weight: 400;
 }
 
-.request-table, {
+.request-table {
     border-collapse: collapse;
     width: 100%;
     text-align: left;
@@ -702,7 +702,25 @@ textarea {
     margin-left: 20px;
 }
 
+.user-request-list {
+    box-sizing: border-box;
+    padding: 3%;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
 
+.user-request-list p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
 
+.time {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.user-request-list h1 {        
+    margin-bottom: 10px;
+}
 
 
