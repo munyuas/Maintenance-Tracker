@@ -14,6 +14,10 @@ class Test_Login:
     def test_password_is_not_blank(self):
         pass
     
+    #Test to make sure password and email are correct
+    def test_authentication(self):
+        pass
+    
     
     
     
