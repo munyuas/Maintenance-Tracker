@@ -13,5 +13,9 @@ class Test_Login(unittest.TestCase):
     
      #Test to make sure the password field is not blank
     def test_if_password_is_blank(self):
+        pass    
+    
+     #Test to make sure the email field is not blank
+    def test_if_email_is_blank(self):
         pass
     
