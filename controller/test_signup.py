@@ -8,5 +8,10 @@ class Test_Login(unittest.TestCase):
         pass    
 
     #Test to ensure username field is not blank
-    def test_username_is_not_blank(self):
+    def test_username_is_blank(self):
         pass
+    
+     #Test to make sure the password field is not blank
+    def test_if_password_is_blank(self):
+        pass
+    
