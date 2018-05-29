@@ -19,5 +19,9 @@ class Test_Login:
         pass
     
     
+if __name__ == '__main__':
+unittest.main()
+    
+    
     
     
