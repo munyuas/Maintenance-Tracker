@@ -1,6 +1,6 @@
 import pytest
 
-class Test_Login:
+class Test_Login(unittest.TestCase):
     
     #Ensures that the login page loads correctly
     def test_login_loads(self):
