@@ -22,6 +22,12 @@ class FlaskTestCase(unnittest.TestCase):
         tester = app.test_client(self)
         response = tester.post('/sigin', data = dict{username="simon", password="simon123"}, follow_redirects=True)
         self.assertIn(b'welcome', response.data)
+        
+     #Tests that login fails
+    def test_l(self):
+        tester = app.test_client(self)
+        response = tester.post('/sigin', data = dict{username="fail", password="fail"}, follow_redirects=True)
+        self.assertIn(b'signin', response.data)
     
     
 if __name__ == '__main__':
