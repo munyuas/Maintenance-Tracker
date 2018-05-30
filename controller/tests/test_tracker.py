@@ -29,8 +29,12 @@ class FlaskTestCase(unnittest.TestCase):
         response = tester.post('/sigin', data = dict{username="fail", password="fail"}, follow_redirects=True)
         self.assertIn(b'signin', response.data)
     
-    #Tests log out
-    
+    #Tests log out, redirects to home page
+    def test_logout(self):
+        tester = app.test_client(self)
+        response = tester.post('/sigin', data = dict{username="simon", password="simon123"}, follow_redirects=True)
+        self.assertIn(b'WE WILL FIX YOUR PROBLEM', response.data)
+        
     
 if __name__ == '__main__':
 unittest.main()
