@@ -18,7 +18,7 @@ class Test_Requests(unittest.TestCase):
         ))
         self.assertEqual(route.status_code, 201)
     
-    #Test for fetching a request successfully
+    #Test for fetching a request successfully via GET
     def test_fetch_request(self):
         route = self.client.get('http://[hostname]/requests/api/v2/requests[request_id]')
         self.assertEqual(route.status_code, 200)
