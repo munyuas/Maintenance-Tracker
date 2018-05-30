@@ -1,10 +1,11 @@
+# imports
 from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/view')
+@app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template("index.html", entries=entries)
 
 
 if __name__ == '__main__':
