@@ -13,8 +13,8 @@ class Test_Requests(unittest.TestCase):
     def test_create_request_successfully(self):        
         route = self.client.post('http://[hostname]/requests/api/v3/requests[request_id]', data=dict (
         request_id="001",
-        request="Bad Internet Connection",
-        request_type="Please repair"
+        request="I love apples",
+        request_type="fruits"
         ))
         self.assertEqual(route.status_code, 201)
     
@@ -28,7 +28,14 @@ class Test_Requests(unittest.TestCase):
         route = self.client.get('http://[hostname]/request/api/v1/requests')
 +       self.assertEqual(route.status_code, 200)
 
-    
-
+    #Test for modifying a request successfully
+    def test_modify_request(self):
+        route = self.client.post('http://[hostname]/requests/api/v4/requests[request_id]', data=dict (
+            request_id="001",
+            request="I love apple",
+            request_type="platforms"
+        ))
+        self.assertEqual(route.status_code, 200)
+        
 if __name__=='__main__':
 unittest.main()
