@@ -17,7 +17,11 @@ class Test_Requests(unittest.TestCase):
         request_type="Please repair"
         ))
         self.assertEqual(route.status_code, 201)
-        
+    
+    #Test for fetching a request successfully
+    def test_fetch_request(self):
+        route = self.client.get('http://[hostname]/requests/api/v2/requests[request_id]')
+        self.assertEqual(route.status_code, 200)
 
 if __name__=='__main__':
 unittest.main()
