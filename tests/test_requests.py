@@ -22,6 +22,13 @@ class Test_Requests(unittest.TestCase):
     def test_fetch_request(self):
         route = self.client.get('http://[hostname]/requests/api/v2/requests[request_id]')
         self.assertEqual(route.status_code, 200)
+        
+    #Test for fetching all requests via GET
+    def test_fetch_all_requests(self):
+        route = self.client.get('http://[hostname]/request/api/v1/requests')
++       self.assertEqual(route.status_code, 200)
+
+    
 
 if __name__=='__main__':
 unittest.main()
